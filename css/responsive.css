@@ -1,0 +1,123 @@
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 991px) {
+  /* Header Section */
+  #navbarNav {
+    width: 100%;
+    height: 17rem;
+    background: #000;
+    z-index: 999;
+  }
+
+  .navbar .nav-item a {
+    font-size: 1rem !important;
+  }
+  .slider_inner .carousel-caption h3 {
+    font-size: 1.5rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .slider_inner .carousel-caption h2 {
+    font-size: 3.8rem !important;
+  }
+  .slider_inner .carousel-caption h2 span {
+    display: block;
+  }
+  .slider_inner .carousel-caption p {
+    font-size: 0.9rem !important;
+  }
+  /* About  Section */
+  #aboutus .about_text {
+    padding-top: 0rem !important;
+  }
+  #aboutus .about_text p {
+    font-size: 0.9rem !important;
+  }
+  /* Headphones Section  */
+  .headphones .card .card_des h4 {
+    font-size: 1.2rem;
+  }
+  /* Style Section */
+  #style_section .style_text p {
+    font-size: 0.9rem !important;
+  }
+  /* Contact Us Section */
+  #contactus .contact_input input {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Header Section */
+  .navbar-brand img {
+    width: 8.5rem;
+  }
+  .slider_inner .carousel-caption {
+    transform: translate(-42%, -35%) !important;
+  }
+  .slider_inner .carousel-caption h3::before {
+    width: 1.675rem !important;
+    height: 0.2125rem !important;
+  }
+  .slider_inner .carousel-caption h3 {
+    font-size: 1.2rem !important;
+  }
+  .slider_inner .carousel-caption h2 {
+    font-size: 2rem !important;
+  }
+  /* About us section */
+  #aboutus .carousel-indicators {
+    margin-bottom: -3.5rem !important;
+  }
+  #aboutus .about_text a {
+    margin: auto;
+  }
+  #aboutus .about_text {
+    margin-top: 6rem !important;
+    text-align: center !important;
+  }
+  #aboutus .about_text h2 {
+    font-size: 1.9rem !important;
+  }
+  #aboutus .about_text h2::before {
+    left: 45% !important;
+  }
+  #aboutus .about_text p {
+    margin-top: 1.5rem !important;
+  }
+  /* Features Section */
+  #features .features .features_text {
+    text-align: center;
+  }
+  #features .features .features_text .line {
+    left: 43% !important;
+  }
+  #features .features .features_text h2 {
+    font-size: 1.8rem !important;
+  }
+  #features .features p {
+    font-size: 0.9rem !important;
+  }
+  #features .features .features_img {
+    margin: auto;
+    width: 50%;
+    height: auto;
+  }
+  #features .features .card {
+    margin-top: 2rem;
+  }
+  #features .features .card h4 {
+    font-weight: 800;
+    font-size: 1.2rem !important;
+  }
+  /* Style Section  */
+  #style_section .style_text {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  #style_section .style_text a {
+    margin: auto;
+  }
+  /* contact us */
+}

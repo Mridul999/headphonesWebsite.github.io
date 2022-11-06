@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+li {
+  list-style: none;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+:active,
+:focus,
+:hover {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+::selection {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+a:hover {
+  text-decoration: none !important;
+  color: var(--primary-color) !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+/*==== ===Variable Define =========*/
+:root {
+  --primary-color: #fd8eaf;
+  --white-color: #fff;
+  --text-color: #9e9999;
+  --black-color: #000;
+}
+
+.main-btn {
+  width: 9.375rem;
+  height: 3.125rem;
+  text-align: center;
+  background: transparent;
+  border: 0.063rem solid var(--primary-color);
+  color: var(--white-color) !important;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  transition: 0.3s;
+}
+.line {
+  background: var(--primary-color);
+  border-radius: 0.3125rem;
+  position: absolute;
+  top: 0;
+  width: 1.875rem;
+  height: 0.3125rem;
+}
+p {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: #9e9999;
+}
+/* 
+===============
+Custom Scrollbar
+===============
+*/
+::-webkit-scrollbar {
+  width: 0.825rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+  border-radius: 1.25rem;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 1.25rem;
+}
+::-webkit-scrollbar-track-piece {
+  background: rgb(238, 166, 235);
+}
+/*
+=================
+ Header Css
+ ================= 
+ */
+.navbar {
+  background: transparent;
+}
+.navbar ul li {
+  padding-right: 0.625rem;
+}
+.navbar ul li a {
+  color: var(--white-color) !important;
+}
+.navigation_wrap {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  position: fixed;
+}
+.navbar .nav-item a {
+  color: var(--white-color) !important;
+  font-size: 1.1rem;
+}
+.navbar .nav-item a:hover,
+.navbar .nav-item a:active {
+  color: var(--primary-color) !important;
+}
+.navbar ul li {
+  padding: 0 0.625rem;
+}
+.navbar .navbar-toggler {
+  border: none;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+/*
+ =================
+Navbar bg change on scroll
+==================
+*/
+.scroll-on {
+  position: fixed;
+  background: var(--black-color);
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.15s ease-in-out 0s;
+}
+.slider_inner .carousel-caption {
+  text-align: left;
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  transform: translate(-75%, -35%);
+  max-width: 1320px;
+}
+.slider_inner .carousel-caption h3::before {
+  content: "";
+  background: var(--primary-color);
+  border-radius: 0.3125rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.875rem;
+  height: 0.3125rem;
+}
+.slider_inner .carousel-caption h3 {
+  font-size: 2.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.slider_inner .carousel-caption h2 {
+  font-size: 6.2rem;
+}
+.slider_inner .carousel-caption h2 span {
+  color: var(--primary-color);
+}
+.slider_inner .carousel-caption p {
+  color: #fff;
+  font-size: 1.125rem;
+}
+/*
+===========================
+About Section Css
+===========================
+*/
+#aboutus .container {
+  margin-top: 6rem;
+}
+#aboutus .container .carousel-inner {
+  border-radius: 0 0 5rem;
+}
+#aboutus .carousel-indicators {
+  margin-bottom: -2.5rem;
+}
+#aboutus .carousel-indicators [data-bs-target] {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+#aboutus .about_text {
+  padding-top: 8rem;
+}
+#aboutus .about_text h2 {
+  font-weight: 800;
+}
+
+#aboutus .about_text h2::before {
+  content: "";
+  background: var(--primary-color);
+  border-radius: 0.3125rem;
+  position: absolute;
+  top: 5rem;
+  left: 3rem;
+  width: 1.875rem;
+  height: 0.3125rem;
+}
+/*
+==================
+Features Section Css
+==================
+*/
+#features .features {
+  margin-top: 12rem;
+}
+#features .features .features_text .line {
+  left: 0.8rem;
+}
+#features .features .features_text h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  padding-top: 1.5rem;
+}
+#features .features .icon {
+  box-shadow: 0.0625rem 0.25rem 1.25rem rgb(26 26 26 / 9%);
+  padding: 1.25rem 0;
+  width: 5rem;
+  text-align: center;
+  height: auto;
+  margin-bottom: 2.5rem;
+  border-top-right-radius: 1.5625rem;
+}
+#features .features .card:hover {
+  cursor: pointer;
+}
+#features .features .card .icon img {
+  opacity: 0.75;
+  filter: brightness(0);
+}
+#features .features .card:hover .icon img {
+  filter: brightness(1);
+}
+#features .features .card:hover h4 {
+  color: var(--primary-color);
+}
+/*
+===================
+Headphone Section Css
+===================
+*/
+.headphones {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.headphones .line {
+  left: 50%;
+}
+.headphones .card {
+  cursor: pointer;
+}
+.headphones .card .card_des .stars {
+  color: #9e9999;
+}
+.headphones .card .card_des img {
+  width: 100%;
+  height: 50%;
+  transition: all 0.3s;
+}
+.headphones .card:hover .card_des img {
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+.headphones .card:hover .card_des h4 {
+  transition: all 0.3s;
+  color: var(--primary-color);
+}
+/*
+====================
+Style Section Css
+====================
+*/
+#style_section .about_text {
+  margin-top: 6rem;
+}
+
+/*
+=====================
+Contact Us Css
+=====================
+*/
+#contactus {
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+#contactus .line {
+  left: 50%;
+}
+#contactus .contact_text h2 {
+  font-weight: bold;
+  margin-top: 2rem;
+}
+form .form-group,
+form input[type="text"] {
+  box-shadow: 0.0625rem 0.375rem 0.625rem 0.1875rem rgb(26 26 26 / 7%);
+  display: inline-block;
+  margin: 0 0.9375rem;
+  border-radius: 1.875rem;
+}
+form input[type="email"],
+form input[type="text"] {
+  display: inline-block;
+  padding: 0 1.5625rem;
+  height: 4.375rem;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+  border-radius: 1.875rem;
+}
+form input[type="email"],
+form input[type="text"],
+form .form-group {
+  background-color: var(--white-color);
+  color: var(--text-color);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.7);
+}
+.subscribe {
+  outline: none;
+  border: none;
+  padding: 0.3125rem 0.3125rem 0.3125rem 1.5625rem;
+  background-color: var(--primary-color);
+  border-radius: 1.875rem;
+  color: var(--white-color);
+}
+.subscribe i {
+  background: var(--white-color);
+  color: var(--primary-color);
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  margin-left: 0.3125rem;
+  text-align: center;
+  border-radius: 100%;
+}
+/*
+==========================================
+footer section Css
+==========================================
+*/
+.footer {
+  background: var(--black-color);
+}
+.footer .footer-social a i {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+.footer .footer-social a:hover i {
+  color: var(--primary-color);
+}
